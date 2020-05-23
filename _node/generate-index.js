@@ -118,7 +118,7 @@ function buildDirIndex () {
 			.filter(file => file.endsWith(".json"));
 
 		const dirFiles = dirContent.map(it => ({
-			download_url: `https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/${dir}/${encodeURIComponent(it)}`,
+			download_url: `https://raw.githubusercontent.com/didii/dnd.homebrew/master/${dir}/${encodeURIComponent(it)}`,
 			path: `${dir}/${it}`,
 			name: it
 		})).filter(it => !unlistedFilenamesCache.has(it.path));

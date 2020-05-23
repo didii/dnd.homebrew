@@ -5,8 +5,8 @@
 	"devDependencies": {},
 	"scripts": {
 		"build": "npm run build:clean && npm run build:index",
-		"build:index": "node _node/build-index.js",
-		"build:clean": "node _node/clean-jsons.js",
+		"build:index": "node _node/generate-index.js",
+		"build:clean": "node _node/clean-and-test.js",
 		"time": "node _node/get-timestamp.js"
 	},
 	"repository": {
